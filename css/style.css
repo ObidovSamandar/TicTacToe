@@ -1,0 +1,105 @@
+body{
+    background-color: #322547;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ##d1d2d579; */
+.card{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 11px;
+}
+.gamers{
+    width: 800px;
+    height: 605px;
+    position: relative;
+}
+.gamers .firstgamer{
+    width: 50%;
+    float: left;
+    background-color: #d5d5d6b4;
+    height: 100%;
+    transition: all ease .3s;
+    position: relative;
+    z-index: 1;
+}
+.gamers .secondgamer{
+    width: 50%;
+    float: right;
+    background-color: #f1f1f2d5;
+    height: 100%;
+    transition: all ease .3s;
+    position: relative;
+    z-index: 1;
+}
+.firstpalayer-title,.secondplayer-title{
+    padding: 80px;
+    text-align: center;
+}
+.firstpalayer-title h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #332254;
+    font-weight: 600;
+}
+.secondplayer-title h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #332254;
+    font-weight: 400;
+}
+.firstpalayer-title h2,.secondplayer-title h2{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.newgamebtn{
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%,-60%);
+    padding: 15px 25px;
+    color: #ffffff;
+    background-color: #322547;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.playing-place{
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translate(-50%,-60%);
+    display: grid;
+    grid-template-columns: repeat(3,70px);
+    grid-template-rows: repeat(3,70px);
+    grid-gap: 6px;
+    z-index: 1000;
+}
+.place{
+    border: 2px solid #322547;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #322547;
+    cursor: pointer;
+}
+#congrat-img img,#congrat-img1 img{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 0;
+    left:120px;
+}
+#congrat-img,#congrat-img1{
+    display: none;
+}
+#winnername1,#winnername2{
+    margin-top: 90px;
+}

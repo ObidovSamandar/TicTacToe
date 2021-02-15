@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME(X-0)</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="gamers">
+            <div class="firstgamer" id="player-0">
+               <div class="firstpalayer-title">
+                   <h1 id="current-0">Player x</h1>
+                   <h2 id="winnername1"></h2>
+                    <div id="congrat-img"><img src="https://i.giphy.com/media/M9ZBBIaS3ReUuik3Ed/giphy.webp"></div>
+               </div>
+            </div>
+            <div class="secondgamer" id="player-1">
+                <div class="secondplayer-title">
+                    <h1 id="current-1">Player 0</h1>
+                    <h2 id="winnername2"></h2>
+                    <div id="congrat-img1"><img src="https://i.giphy.com/media/M9ZBBIaS3ReUuik3Ed/giphy.webp"></div>
+                </div>
+            </div>
+            <div class="newgamebtn">
+                <h2 onclick="newGame()">New game</h2>
+            </div>
+            <div class="playing-place">
+                <div class="place box-1" id="places1" onclick="playing(this,'1')"></div>
+                <div class="place box-2" id="places2" onclick="playing(this,'2')"></div>
+                <div class="place box-3" id="places3" onclick="playing(this,'3')"></div>
+                <div class="place box-4" id="places4" onclick="playing(this,'4')"></div>
+                <div class="place box-5" id="places5" onclick="playing(this,'5')"></div>
+                <div class="place box-6" id="places6" onclick="playing(this,'6')"></div>
+                <div class="place box-7" id="places7" onclick="playing(this,'7')"></div>
+                <div class="place box-8" id="places8" onclick="playing(this,'8')"></div>
+                <div class="place box-9" id="places9" onclick="playing(this,'9')"></div>
+            </div>
+        </div>
+    </div>
+   <script src="/js/script.js"></script>
+</body>
+</html>
